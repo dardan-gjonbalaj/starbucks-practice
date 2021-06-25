@@ -1,0 +1,317 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@media (min-width: 800px) {
+  .header-container {
+    display: block;
+
+    width: 100vw;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+  }
+  .header-container .header-flex {
+    display: flex;
+    justify-content: center;
+  }
+  .header-container .header-flex .header-flex__image {
+    width: 10%;
+    padding: 0.25rem;
+  }
+
+  .header-container .header-flex .header-flex__image .block {
+    width: 100%;
+  }
+  .header-container .header-flex .header-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 10px;
+  }
+  .header-container .header-flex .header-wrapper li {
+    display: inline;
+    font-size: 1.3rem;
+    padding-top: 50px;
+    padding-left: 50px;
+  }
+  .header-container .header-flex .center-items {
+    display: flex;
+    align-items: center;
+    max-width: 30%;
+    padding-left: 25%;
+    padding-top: 20px;
+  }
+
+  .body {
+    font-family: "Shadows Into Light", cursive;
+    width: 100vw;
+    height: 100%;
+  }
+  .rewards-banner {
+    display: flex;
+    padding-left: 3.5rem;
+    align-items: center;
+    height: 50px;
+    width: 100vw;
+    background-color: #008248;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    margin: 0;
+  }
+  .rewards-banner > p {
+    padding-left: 2rem;
+    margin: 0;
+    align-items: center;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase !important;
+    letter-spacing: 0.1em !important;
+  }
+
+  .hero-container {
+    display: flex;
+    background-image: url(https://www.starbucks.com/weblx/images/rewards/hero/xl-hero-desktop_2021.png);
+    background-size: cover;
+    background-position: center;
+    background-color: rgb(212, 233, 226);
+    height: 500px;
+  }
+  .body .hero-text {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 16px;
+    margin: 75px 50px;
+  }
+  .body .hero-text h1,
+  p {
+    line-height: 1.5;
+    font-size: 26px;
+    margin: 1rem 0;
+    font-weight: 700;
+  }
+
+  .body .hero-image {
+    background-color: rgb(212, 233, 226);
+    max-height: 100%;
+    max-width: 100%;
+  }
+
+  .tab {
+    padding: 0.5rem 2.5rem;
+  }
+  .tab .tabLinks {
+    display: inline-block;
+    border: 0;
+    font-size: 30px;
+    border-radius: 16px;
+    padding: 0 1rem;
+    margin: 0 0.5rem;
+  }
+  .tab .tabLinks:focus {
+    text-decoration: underline gold;
+  }
+
+  .tab-box {
+    background-color: rgb(212, 233, 226);
+    border: 1px solid gold;
+  }
+  .tab-box .tabcontent {
+    margin: 0 25%;
+  }
+  .tab-text {
+    font-size: 20px;
+  }
+
+  .tab-wrapper {
+    font-family: "Shadows Into Light", cursive;
+  }
+}
+
+@media (min-width: 1050px) {
+  .header-container {
+    display: block;
+
+    top: 0;
+    z-index: 1;
+    background-color: white;
+  }
+  .header-container .header-flex {
+    display: flex;
+    width: 100vw;
+  }
+  .header-container .header-flex .header-flex__image {
+    height: 50%;
+    width: 10%;
+    padding: 0.25rem;
+  }
+  .body .hero-text {
+    font-size: 1rem;
+    margin-top: 100px;
+    margin-left: 100px;
+  }
+
+  .header-container .header-flex .header-flex__image .block {
+    max-height: 55%;
+    max-width: 55%;
+  }
+  .header-container .header-flex .header-wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    padding-top: 20px;
+  }
+  .header-container .header-flex .header-wrapper li {
+    display: inline;
+    padding-left: 2.4rem;
+  }
+  .header-container .header-flex .center-items {
+    display: flex;
+    align-items: center;
+
+    max-width: 30%;
+    padding-left: 45%;
+    padding-top: 30px;
+  }
+
+  .body {
+    font-family: "Shadows Into Light", cursive;
+    width: 100vw;
+    height: 100%;
+  }
+
+  .body .hero-image {
+    background-color: rgb(212, 233, 226);
+    max-height: 100%;
+    max-width: 100%;
+  }
+  .tab .tabLinks:focus {
+    text-decoration: underline gold;
+  }
+
+  .tab-wrapper {
+    font-family: "Shadows Into Light", cursive;
+  }
+}
